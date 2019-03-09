@@ -1,0 +1,14 @@
+<h1>Autho: <%= author.name %></h1>
+
+<a href='/post/new'>Create New Post</a>
+
+<hr />
+
+<h2>Posts</h2>
+<% author.posts.forEach(function(post){ %>
+<div class='well'>
+    <h3>
+        <a href='/posts/<%= posts.id %>'><%= post.title %></a>
+    </h3>
+</div>
+<& }); %>
